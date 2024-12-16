@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f7; /* Light gray for a softer look */
+  color: #333; /* Dark gray for text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 800px;
+  padding: 20px;
+  background: #ffffff; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #3498DB; /* Soft blue for a pleasant accent */
+}
+
+/* Status Section */
+.status {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #e8f4fd; /* Light blue background */
+  border-radius: 8px;
+  font-size: 1.4em;
+  color: #007bff; /* Accent color for timer */
+}
+
+#liveTimer {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* Form Section */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.form input {
+  flex:1;
+  min-width: 200px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+  width: 300px;
+  height: 42px;
+  background-color: #ECF0F1; /* Light gray background for input */
+}
+
+.form button {
+  height: 42px;
+  line-height: 1;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Punch In Button (Green) */
+#punchIn {
+  background-color: #2ECC71; /* Bright green */
+  margin-right: 0px;
+}
+
+#punchIn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+#punchIn:active {
+  background-color: #1e7e34; /* Even darker green on active */
+}
+
+/* Punch Out Button (Soft Red) */
+#punchOut {
+  background-color: #E74C3C; /* Soft red */
+  margin-left: 0px;
+}
+
+#punchOut:hover {
+  background-color: #c0392b; /* Darker soft red on hover */
+}
+
+#punchOut:active {
+  background-color: #a83221; /* Even darker soft red on active */
+}
+
+/* Logs Section */
+.logs {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.logs h2 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.logs table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logs th, .logs td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.logs th {
+  background-color: #3498DB; /* Soft blue header */
+  color: #fff;
+  font-weight: bold;
+}
+
+.logs td {
+  font-size: 0.9em;
+}
+
+.logs tr:nth-child(even) {
+  background-color: #f5f5f7; /* Alternating row colors */
+}
+
+.logs tr:hover {
+  background-color: #e0ecf7; /* Light blue on hover */
+}

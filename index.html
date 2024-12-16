@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Time Tracker</h1>
+    
+    <!-- Status Section -->
+    <div id="status" class="status">
+      <p id="taskStatus">No task running.</p>
+      <p id="liveTimer">00:00:00</p>
+    </div>
+    
+    <!-- Input Form -->
+    <div class="form">
+      <input type="text" id="taskDescription" placeholder="Enter task description">
+      <input type="text" id="taskCategory" placeholder="Enter task category">
+      <button id="punchIn">Punch In</button>
+      <button id="punchOut">Punch Out</button>
+    </div>
+    
+    <!-- Logs Table -->
+    <div class="logs">
+      <h2>Logs</h2>
+      <table id="logTable">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Task</th>
+            <th>Punch In</th>
+            <th>Punch Out</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Logs will be dynamically populated here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
